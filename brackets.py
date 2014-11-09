@@ -1,5 +1,5 @@
 import sys
-
+#Program to validate parantheses
 def bracket_checker(sentence):
     li=[]
     left_indices=[]
