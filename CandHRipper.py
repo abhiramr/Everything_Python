@@ -6,7 +6,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 def dates(ystart):
-    dm={'01': 31} #,'02': 28,'03': 31,'04': 30,'05': 31,'06': 30,'07': 31,'08': 31,'09': 30,'10': 31,'11': 30,'12': 31}
+    dm={'01': 31 ,'02': 28,'03': 31,'04': 30,'05': 31,'06': 30,'07': 31,'08': 31,'09': 30,'10': 31,'11': 30,'12': 31}
     for i in range(ystart,ystart+1):
         for x in sorted(dm.keys()):
             for j in range(10,dm.get(x)+1):
