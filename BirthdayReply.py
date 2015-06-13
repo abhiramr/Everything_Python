@@ -2,16 +2,16 @@ import requests
 import json
 from random import randint
 
-#Needs the requests module.
-#Use (sudo) pip install requests
+# Needs the requests module.
+# Use (sudo) pip install requests
 
-#http://www.timestampgenerator.com/
-#Use this link to generate the timeStamp.
+# http://www.timestampgenerator.com/
+# Use this link to generate the timeStamp.
 timeStamp =  InsertUTCTimeStampHere(eg.1415994915)
 
 
 # Initialize the Graph API with a valid access token
-#Generate access token here: https://developers.facebook.com/tools/explorer/
+# Generate access token here: https://developers.facebook.com/tools/explorer/
 accessToken = 'Access token here. Do not delete the quotes.'
 
 
@@ -34,13 +34,12 @@ for wallpost in wallposts:
         url = baseUrl + '%s/comments' % wallpost['post_id']
         likesUrl = baseUrl + str(wallpost['post_id']) + "/likes/?access_token=" + accessToken + "&method=POST"
         requests.post(likesUrl)
-        #Add as many replies you want inside this list.
-        #Make sure to change the randint() method's second parameter
-        #with the number of replies - 1.
+        # Add as many replies you want inside this list.
+        # Make sure to change the randint() method's second parameter
+        # with the number of replies - 1.
         messages = [ 'Thank you :)', 'Thanks :)']
         comment = {'access_token': accessToken, 'message': messages[randint(0,1)]}
         requests.post(url, data = comment)
         print "Wall post %d done" % count
         count += 1
 
-Status API Training Shop Blog About
