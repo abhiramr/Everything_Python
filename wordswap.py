@@ -13,7 +13,7 @@ while j < tc:
     k = 0
     if len1 < 100000:
         while i < len1:
-            if str1[i] == ' ' or i==len1-1:
+            if str1[i] == ' ' or i == len1-1:
                 list1.append(str1[k:i+1])
                 k=i+1
             i += 1
@@ -24,18 +24,18 @@ while j < tc:
     if lenlist % 2 == 0:
         while s < t:
             list1[s], list1[t] = list1[t], list1[s]
-            s = s+1
-            t = t-1
+            s += 1
+            t -= 1
     else:
-        while(s!=t):
-            list1[s],list1[t]=list1[t],list1[s]
-            s=s+1
-            t=t-1
+        while s != t:
+            list1[s], list1[t] = list1[t], list1[s]
+            s += 1
+            t += 1
     for jj in list1:
-        str2=str2+" "+jj
+        str2 = str2+" "+jj
     str3.append(" ".join(str2.split()))
-    j=j+1
-k=0
+    j += 1
+k = 0
 while k < j:
     print str3[k]
-    k=k+1
+    k += 1
