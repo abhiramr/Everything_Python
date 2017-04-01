@@ -1,1 +1,1 @@
-This repository consists varied Python scripts. 
+This repository consists varied Python scripts..
