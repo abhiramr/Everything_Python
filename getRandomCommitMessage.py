@@ -5,4 +5,6 @@ with open(path, 'rb') as f:
     reader = csv.reader(f)
     print ""
     for row in reader:
-        print row[int(random.random()*100)%len(row)]
+        j= row[int(random.random()*100)%len(row)]
+        break
+print j
