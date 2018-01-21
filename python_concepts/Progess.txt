@@ -1,0 +1,2 @@
+
+09-01-2018 16:50:54:Continue from Lambdas [https://docs.python.org/2/tutorial/controlflow.html#arbitrary-argument-lists](Additional notes - https://docs.python.org/3/faq/programming.html#id13)
