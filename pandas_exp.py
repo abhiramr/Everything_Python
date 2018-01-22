@@ -1,3 +1,7 @@
+#To line profile use - 
+#kernprof -l pandas_exp.py
+#python -m line_profiler pandas_exp.py.lprof
+
 import pandas as pd
 import numpy as np
 import io
