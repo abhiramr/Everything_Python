@@ -3,7 +3,6 @@
 
 ### Installation of Airflow:
 
-- pip install apache-airflow
 - pip install apache-airflow[all]
 
 ### Initials:
