@@ -3,7 +3,7 @@
 
 ### Installation of Airflow:
 
-- pip install apache-airflow
+- pip install apache-airflow 
 - pip install apache-airflow[all]
 
 ### Initials:
@@ -22,3 +22,7 @@
 ### To run the local server:
 
 - airflow webserver
+
+### Links:
+- http://incubator-airflow.readthedocs.io/en/latest/installation.html
+- http://airflow.apache.org/installation.html
