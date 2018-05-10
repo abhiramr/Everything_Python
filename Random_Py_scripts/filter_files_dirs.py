@@ -33,7 +33,6 @@ def list_4(path):
     for fnames in os.listdir(path):
         if rx.search(fnames):
             r.append(os.path.join(path,fnames))
-        #r.extend([os.path.join(path, x) for x in fnames if rx.search(x)])
     return r
 
 def main():
