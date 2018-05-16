@@ -19,16 +19,18 @@ def listdir(d):
         for item in os.listdir(d):
             listdir((d + '/' + item) if d != '/' else '/' + item)
 
-def list_3(path):
-    rx = re.compile(r'(cmd_).+\.(py)$')
+def list_3(path,pattern):
+    #rx = re.compile(r'(cmd_).+\.(py)$')
     r = []
+    rx = re.compile(pattern)
     for path, dnames, fnames in os.walk(path):
         r.extend([os.path.join(path, x) for x in fnames if rx.search(x)])
     return r
 
 
-def list_4(path):
-    rx = re.compile(r'(cmd_).+\.(py)$')
+def list_4(path,pattern):
+#    rx = re.compile(r'(cmd_).+\.(py)$')
+    rx = re.compile(pattern)
     r = []
     for fnames in os.listdir(path):
         if rx.search(fnames):
@@ -39,7 +41,7 @@ def main():
     #print(get_files_list_dir(sys.argv[1]))
     #listdir(sys.argv[1])
     #print(list_files_)
-    print(list_4(sys.argv[1]))
+    print(list_4(sys.argv[1],sys.argv[2]))
 
 
 if __name__ == "__main__":
