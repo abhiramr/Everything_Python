@@ -34,7 +34,7 @@ for i in range(len(m1)):
     title = slide.shapes.title
     #subtitle = slide.placeholders[1]
 
-    title.text = '\n'.join(momo[i])
+    title.text = '\n'.join(m1[i])
     
 
 prs.save('output_ppt.pptx')
