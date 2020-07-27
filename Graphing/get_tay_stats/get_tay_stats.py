@@ -15,8 +15,8 @@ class Taylor:
 
     def __init__(self, taylor_video_list):
         self.taytay = taylor_video_list
-        if os.path.exists('../Data/Graphing/taystats.json'):
-            with open("../Data/Graphing/taystats.json", "r") as read_file:
+        if os.path.exists('../../Data/Graphing/taystats.json'):
+            with open("../../Data/Graphing/taystats.json", "r") as read_file:
                 self.tay_local = json.load(read_file)
             
         else:
@@ -98,8 +98,8 @@ class Taylor:
         sns.set(font_scale=1.6)
         _ax = sns.heatmap(df_conc, annot=True, fmt="d", linewidths=1.5, cmap=color_picked)
         time_ = datetime.now().strftime("%Y-%m-%d-%H-%M-%S")
-        pyplot.savefig("../Data/Outputs/Graphing/output_tay_{}.png".format(time_))
-        print("Output saved at ../Data/Outputs/Graphing/output_tay_{}.png".format(time_))
+        pyplot.savefig("../../Data/Outputs/Graphing/output_tay_{}.png".format(time_))
+        print("Output saved at ../../Data/Outputs/Graphing/output_tay_{}.png".format(time_))
         
         most_viewed = df_conc[df_conc.viewCount == df_conc["viewCount"].max()].index[0]
         most_viewed_count = df_conc["viewCount"].max()
